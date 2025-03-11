@@ -156,7 +156,6 @@ We were able to summarise articles within our dataset with a Rouge-1 score above
 #### **Computational Performance:** 
 
 | Model |	Rouge-1	| Rouge-2	| Rouge-l |
-|:----------------|:-------------------------------:|:----------------|
   T5	0.44169	0.223363	0.405696
   Bart	0.44169	0.223363	0.405696
 
