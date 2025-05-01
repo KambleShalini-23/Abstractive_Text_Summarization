@@ -178,3 +178,18 @@ There are a few possible direct extensions of this work -
 - Extend Evaluation Measurement Parameters: We can extend the summary evaluation pipeline by including text quality measurement and other extrinsic measures that evaluates the performance of models in terms of generated text i.e. if the grammar of the generated sentence is acceptable with the correct structure and referential clarity.
 
 - Extension to additional NLP tasks: Since this experiment is an application of the wider Natural Language Generation problem, the algorithms trialled here can be tweaked and applied for Machine Reading Comprehension and Question Answering systems.
+
+## Trustworthiness and Ethical considerations
+
+In real-world deployments, it is essential to ensure that the generated summaries are both accurate and trustworthy. In this project, the following aspects were considered:
+
+Faithfulness of Summaries: We determine if the generated summaries maintain the factual consistency of the original input articles. This is somewhat validated using ROUGE scores, but further human examination is necessary.
+
+Bias and Hallucination Checks: The model is examined for any tendency to produce biased or hallucinated content, particularly in low-data or unclear input settings. Future study will incorporate techniques such as factual consistency measurements (e.g., FactCC) and hallucination detectors.
+
+Transparency of Methods: All processes in data preprocessing, model training, and evaluation are documented and reproducible, ensuring workflow transparency.
+
+Model Limitations: While T5 and BART are excellent baseline models, they may nevertheless suffer from hallucinations, repetition, or a lack of context-specific nuances. These are areas for future improvement.
+
+
+
